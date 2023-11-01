@@ -1,0 +1,21 @@
+body{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    width:100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.titulo{
+    font-size: 36px;
+    background-color: rgb(24, 58, 73);
+    color:white;
+    width:100%;
+    text-align: center;
+
+}
