@@ -1,6 +1,5 @@
 import { useEffect, useState } from "react";
 import "./style.css";
-
 function App() {
   const [nutri, setNutri] = useState([]);
 
@@ -25,7 +24,18 @@ function App() {
     <div className="container">
       <strong className="titulo">React Nutry</strong>
       {nutri.map((item) => {
-        <p>{item}</p>;
+        return (
+          <article key={item.id}>
+            <h2 className="title-post">{item.titulo}</h2>
+            <p className="categoria">{item.categoria}</p>
+            <div className="conteudo">
+              <img className="imagens" src={item.capa} alt={"description"} />
+              <p className="paragrafo"> {item.subtitulo}</p>
+            </div>
+
+            <a className="botão">Acessar</a>
+          </article>
+        );
       })}
     </div>
   );

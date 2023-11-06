@@ -2,6 +2,8 @@ body{
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    caret-color: transparent;
+    
 }
 .container{
     display: flex;
@@ -9,6 +11,7 @@ body{
     width:100%;
     justify-content: center;
     align-items: center;
+  
 }
 
 .titulo{
@@ -18,4 +21,70 @@ body{
     width:100%;
     text-align: center;
 
+}
+
+.conteudo{
+    display:flex;
+    justify-content:center;
+    box-sizing: border-box;
+    border-radius:3px;
+    border:3px solid rgba(6, 25, 6, 0.128);
+    padding:10px;
+    margin-top:20px;
+    margin-bottom: 30px;
+    cursor:pointer;
+  
+}
+
+.conteudo .imagens{
+    width:300px;
+    height:200px;
+    border-radius: 10px;
+    box-shadow: 3px 3px 50px rgba(33, 30, 36, 0.677);
+ 
+}
+.conteudo .imagens:hover{
+  border:1px solid rgba(38, 0, 255, 0.141);
+  
+ 
+}
+
+.conteudo .paragrafo{
+    font-size: 20px;
+    width:400px;
+    margin-left:20px;
+}
+
+.title-post{
+    color:rgb(14, 59, 6);
+    font-weight: bold;
+    text-shadow: 3px 2px 2px rgba(55, 55, 99, 0.448);
+    margin-top:50px;
+
+}
+
+.categoria{
+    font-size: 15px;
+    font-weight: bold;
+}
+
+
+.botão{
+    padding-left: 40%;
+    padding-right: 40%;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    margin-left:40px;
+    font-size: 25px;
+    color:rgba(38, 32, 32, 0.616);
+    border:2px solid rgba(98, 98, 234, 0.35);
+    background-color: rgba(28, 38, 35, 0.189);
+    border-radius: 8px;
+    font-weight: bold;
+    cursor:pointer;
+}
+
+.botão:hover{
+    background-color: rgba(36, 79, 66, 0.566);
+    color:white;
 }
